@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.INFO) # set logging level
 output = client.chat.completions.create(
 	model="gpt-3.5-turbo",
 	messages=[
-	{"role": "system", "content": "You are a brainstorming assistant for a meeting room. Your job is to listen in to the conversation that is happening, the sticky notes that are on the whiteboard, and generate concepts that aid in the brainstorming process. The format you should return is an array with each concept as an element, separated by commas , with each element being a different concept. Please ONLY RETURN THE ARRAY as your output."},
+	{"role": "system", "content": "You are a brainstorming assistant for a meeting room. Your job is to listen in to the conversation that is happening, the sticky notes that are on the whiteboard, and generate concepts that aid in the brainstorming process. The format you should return is each concept separated by commas. Please ONLY RETURN THE CONCEPTS as your output."},
 	{"role": "user", "content": "The transcription is: " + str(transcription)},
 	{"role": "user", "content": "The sticky notes show: " + str(stickies)}
 	],
@@ -25,4 +25,22 @@ output = client.chat.completions.create(
 )
 response = output.choices[0].message.content
 
-logging.info(response[2])
+responses = response.split(',')
+
+logging.info(responses)
+logging.info(responses[0])
+logging.info(responses[1])
+logging.info(responses[2])
+logging.info(len(responses))
+
+response = client.images.generate(
+  model="dall-e-3",
+  prompt=responses[2],
+  size="1024x1024",
+  quality="standard",
+  n=1,
+)
+
+image_url = response.data[0].url
+
+logging.info(image_url)
