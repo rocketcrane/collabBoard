@@ -1,6 +1,9 @@
 
 # Sticky Notes Coordinate Detection
-See stickydetection.py under /MAIN
+> See stickydetection.py
+
+The result should look like this: 
+![](pinkSquareDetection.png)
 
 ---
 
