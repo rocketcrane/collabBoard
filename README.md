@@ -2,6 +2,8 @@
 # Sticky Notes Coordinate Detection
 > See stickydetection.py
 
+This is detecting the center coordinates each pink square in real time; coordinates are printed in nested arrays when sticky notes are changed. 
+
 The result should look like this: 
 ![](pinkSquareDetection.png)
 
