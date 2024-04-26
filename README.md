@@ -1,3 +1,9 @@
+
+# Sticky Notes Coordinate Detection
+See stickydetection.py under /MAIN
+
+---
+
 # Detect and Read Handwritten Words
 
 This is a **handwritten text recognition (HTR) pipeline** that operates on **scanned pages** and applies the following
