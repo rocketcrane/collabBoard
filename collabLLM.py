@@ -8,6 +8,10 @@ load_dotenv() # use .env file for API key
 client = OpenAI() # initialize AI
 
 def transcribe(inputs):
+	# wait for audio recording to finish
+	while inputs[0] != 1:
+		continue
+	
 	MP3_FILENAME = "recording.mp3" # keep track of the MP3 filename across processes
 	TRANSCRIPTION_FILENAME = "transcription.txt" # keep track across processes
 	
@@ -26,13 +30,18 @@ def transcribe(inputs):
 		f.write(str(datetime.now())[:19] + " " + current_transcription)
 		f.write('\n')
 	
-	inputs[0] = 0 # tell the main loop that the file has been transcribed
+	inputs[0] = 0 # tell the audio loop that the file has been transcribed
+	inputs[1] = 1 # tell the brainstorm loop that the transcription file exists
 	logging.info("current transcription: " + current_transcription)
 	os.remove(MP3_FILENAME) # remove the mp3 recording
 	
 def brainstorm(inputs):
 	TRANSCRIPTION_FILENAME = "transcription.txt" # keep track across processes
 	CONCEPTS_FILENAME = "generated_concepts.txt" # keep track across processes
+	
+	# wait for transcription file to show up
+	while inputs[1] != 1:
+		continue
 
 	f = open(TRANSCRIPTION_FILENAME,mode='r')
 	transcription = f.read()
@@ -59,3 +68,5 @@ def brainstorm(inputs):
 	logging.info("current concepts: ")
 	for concept in responses:
 		print(concept)
+	
+	inputs[1] = 0 # tell the transcription loop that the transcription file has been read
