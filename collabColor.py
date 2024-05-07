@@ -4,6 +4,8 @@ import os
 import time
 import shutil
 import json
+import math
+import logging
 import matplotlib.pyplot as plt
 from path import Path
 from datetime import datetime
@@ -12,6 +14,10 @@ from PIL import Image
 
 # -------------------------------------------------------------------------------------
 def find_pink_squares(image, min_area=1000):
+    # Define the range for pink color in HSV
+    lower_pink = np.array([160, 50, 50])
+    upper_pink = np.array([180, 255, 255])
+    
     hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
     mask = cv2.inRange(hsv, lower_pink, upper_pink)
     mask = cv2.erode(mask, None, iterations=2)
@@ -63,6 +69,11 @@ def clear_folder(folder_path):
 
 def detectStickies(inputs):
     STICKIES_FILENAME = "stickies.txt" # to save across processes
+    try:
+        os.remove(STICKIES_FILENAME) # remove the previous stickies
+    except:
+        logging.warning("no stickies file")
+
     
     with open('data/words_alpha.txt') as f:
         word_list = [w.strip().upper() for w in f.readlines()]
@@ -77,7 +88,7 @@ def detectStickies(inputs):
     
     # -------------------------------------------------------------------------------------
     
-    for decoder in ['word_beam_search']: # , 'best_path' (dictionary off for best path, on for word beam search)
+    for decoder in ['best_path']: # , 'best_path', 'word_beam_search' (dictionary off for best path, on for word beam search)
         cap = cv2.VideoCapture(0)
         # if not cap.isOpened():
         #     print("Error: Camera is not available")
@@ -108,7 +119,7 @@ def detectStickies(inputs):
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
             if all(np.linalg.norm(np.array(center) - np.array(last_center)) > tolerance for last_center in last_positions.keys()):
                 saved_path = save_cropped_image(frame, (x, y, w, h), img_count)
-                resized_path = f'data/resized_images/{center_x}_{center_y}.jpg'
+                resized_path = f'data/resized_images/{x}_{y}_{w}_{h}.jpg'
                 resize_image_cv(saved_path, resized_path, 10)
                 img_count += 1
             last_positions[center] = (x, y, w, h)
@@ -140,12 +151,17 @@ def detectStickies(inputs):
             
             c_x = img_filename.removesuffix(".jpg").removeprefix("data/resized_images/").split("_")[0]
             c_y = img_filename.removesuffix(".jpg").removeprefix("data/resized_images/").split("_")[1]
+            c_w = img_filename.removesuffix(".jpg").removeprefix("data/resized_images/").split("_")[2]
+            c_h = img_filename.removesuffix(".jpg").removeprefix("data/resized_images/").split("_")[3]
+            
+            dist = math.sqrt((int(c_x) - 898)**2 + (int(c_y) - 426)**2)
             
             # save the center coordinates to a text file
             with open(STICKIES_FILENAME, 'a') as f:
-                f.write(str(datetime.now())[:19] + ", " + str(c_x) + ", " + str(c_y) + ", " + ' '.join(page_text))
+                f.write(str(c_x) + ", " + str(c_y) + ", " + str(c_w) + ", " + str(c_h) + ", " + ' '.join(page_text) + ", " + str(dist))
                 f.write('\n')
     
             time.sleep(3)
     
             img_count += 1
+    inputs[2] = 1 # tell the brainstorming loop that the stickies have been updated

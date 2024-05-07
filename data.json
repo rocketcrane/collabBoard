@@ -1,0 +1,95 @@
+{
+    "stickies": [
+        {
+            "x": 1166,
+            "y": 176,
+            "w": 142,
+            "h": 138,
+            "isTheme": false,
+            "text": " WATERFALL"
+        },
+        {
+            "x": 898,
+            "y": 426,
+            "w": 144,
+            "h": 141,
+            "isTheme": false,
+            "text": " CUBISM"
+        },
+        {
+            "x": 102,
+            "y": 811,
+            "w": 163,
+            "h": 150,
+            "isTheme": false,
+            "text": " SYMMETRICAL"
+        },
+        {
+            "x": 1619,
+            "y": 868,
+            "w": 150,
+            "h": 141,
+            "isTheme": false,
+            "text": " BRUTALISM"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "isTheme": true,
+            "text": "Oakland Social Housing Project"
+        }
+    ],
+    "generated_concepts": [
+        {
+            "details": "Social housing design"
+        },
+        {
+            "details": " Cubist architecture"
+        },
+        {
+            "details": " Pizzeria concept"
+        },
+        {
+            "details": " Battery innovation"
+        },
+        {
+            "details": " Xanthan Gum in food"
+        },
+        {
+            "details": " Pig-themed restaurant"
+        },
+        {
+            "details": " Tripod structures"
+        },
+        {
+            "details": " Waterfall feature"
+        },
+        {
+            "details": " Symmetrical layout"
+        },
+        {
+            "details": " Brutalist style"
+        },
+        {
+            "details": " Creative use of numbers."
+        }
+    ],
+    "generated_images": [
+        {
+            "image_prompt": "Create an image of a symmetrical brutalist building with a waterfall cascading down one side, incorporating elements of cubism and featuring a subtle reference to xanthan gum, all while surrounded by pigs and blankets, with tripods strategically placed around the structure.",
+            "url": " https://oaidalleapiprodscus.blob.core.windows.net/private/org-iyZYYrlQGXOVScOcwAA21nZa/user-rmARnts04nQvXSkcmmwc6NbW/img-KQLxFa5Q4Y3qHlS3y9uyrah9.png?st=2024-05-07T04%3A11%3A25Z&se=2024-05-07T06%3A11%3A25Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-05-06T22%3A05%3A52Z&ske=2024-05-07T22%3A05%3A52Z&sks=b&skv=2021-08-06&sig=KZszm4QrpiRLv2JsF2qTLWVhcr0B3V8O3UDaSq2aHjE%3D"
+        },
+        {
+            "image_prompt": "Create an image of a waterfall cascading down a cubist-style building, incorporating elements of symmetry and brutalist architecture.",
+            "url": " https://oaidalleapiprodscus.blob.core.windows.net/private/org-iyZYYrlQGXOVScOcwAA21nZa/user-rmARnts04nQvXSkcmmwc6NbW/img-Cs4BrRA5oEg4OOZs4mZzbb4k.png?st=2024-05-07T04%3A41%3A30Z&se=2024-05-07T06%3A41%3A30Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-05-06T21%3A40%3A46Z&ske=2024-05-07T21%3A40%3A46Z&sks=b&skv=2021-08-06&sig=lBFlxDCfBuavC5eIPPQB46HiQv54do4i7TvRRo5oYUw%3D"
+        }
+    ],
+    "generated_summary": [
+        {
+            "title": "Summary",
+            "details": "In a whirl of ideas, the team discussed a social housing project with a cubist touch, but the conversation quickly shifted to the idea of building a pizzeria. Amidst mentions of Xanthan Gum, pigs, blankets, and tripods, the group seemed eager to explore various concepts."
+        }
+    ]
+}

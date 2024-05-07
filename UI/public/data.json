@@ -1,0 +1,17 @@
+{
+    "stickies":[
+     {"x":100, "y":30, "w":30, "h":30, "isTheme":true, "text":"Social Housing Project in Oakland"},
+     {"x":100, "y":100, "w":30, "h":30, "isTheme":false, "text":"Modern"},
+     {"x":200, "y":300, "w":30, "h":30, "isTheme":false, "text":"Sustainable"}
+    ],
+    "generated_concepts":[
+     {"title":"Minimalist", "details":"a minimalist facade"},
+     {"title":"Brutalist", "details":"a brutalist building"}
+    ],
+    "generated_image":{"image_prompt":"a modern sustainable facade for a social housing project in oakland", "url":"https://upload.wikimedia.org/wikipedia/en/e/ed/Nyan_cat_250px_frame.PNG"},
+    "generated_summary":{
+        "title":"The conversation is about designing a social housing project in Oakland",
+        "details":"The project should be modern and sustainable. The facade should be minimalist and brutalist. The image should be a modern sustainable facade for a social housing project in Oakland."
+    }
+}
+

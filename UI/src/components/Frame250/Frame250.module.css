@@ -1,0 +1,302 @@
+.root {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #000;
+  overflow: hidden;
+}
+.rectangle72 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 900px;
+  height: 1080px;
+  background-color: #000;
+}
+.rectangle74 {
+  position: absolute;
+  left: 1055px;
+  top: 660px;
+  width: 418px;
+  height: 418px;
+  border-radius: 18px;
+  background-image:/* webpackIgnore: true */ url('/assets/rectangle74.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rectangle80 {
+  position: absolute;
+  right: 0;
+  top: 660px;
+  width: 418px;
+  height: 418px;
+  border-radius: 18px;
+  background-image:/* webpackIgnore: true */ url('/assets/rectangle80.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rectangle79 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 132px;
+  background-color: #000;
+}
+.titleOfTheConcent {
+  color: #fff;
+  font-size: 45px;
+  line-height: 120%;
+  font-weight: 600;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: -0.01em;
+  position: absolute;
+  left: calc(50% - 0px);
+  top: 36.0547px;
+  width: 855.3965px;
+  height: 49.8897px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateX(-50%);
+}
+.rectangle73 {
+  position: absolute;
+  left: 0;
+  bottom: 0.3149px;
+  width: 1020px;
+  height: 686.6851px;
+  border-radius: 18px;
+  background-color: #fff;
+}
+.line59 {
+  position: absolute;
+  left: 0;
+  top: 735.3428px;
+  width: 1020px;
+  max-width: 100%;
+  height: 0;
+  max-height: 100%;
+  border-bottom: solid 1px #cccccc;
+}
+.line60 {
+  position: relative;
+  left: 510px;
+  top: 392px;
+  width: 1px;
+  max-width: 100%;
+  height: 687px;
+  max-height: 100%;
+}
+.line60::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+  width: 687px;
+  height: 0;
+  border-bottom: solid 1px #cccccc;
+}
+.rectangle75 {
+  position: absolute;
+  left: 661.9854px;
+  top: 455.5713px;
+  width: 200px;
+  height: 200px;
+  background-color: #ff85f3;
+}
+.rectangle76 {
+  position: absolute;
+  left: 661.9854px;
+  top: 803.6328px;
+  width: 200px;
+  height: 200px;
+  background-color: #ff85f3;
+}
+.rectangle77 {
+  position: absolute;
+  left: 151.9854px;
+  top: 803.6328px;
+  width: 200px;
+  height: 200px;
+  background-color: #ff85f3;
+}
+.rectangle78 {
+  position: absolute;
+  left: 151.9854px;
+  top: 455.5713px;
+  width: 200px;
+  height: 200px;
+  background-color: #ff85f3;
+}
+.ellipse107 {
+  position: absolute;
+  left: 487.1191px;
+  top: 713.4619px;
+  width: 45.7607px;
+  height: 45.7607px;
+  overflow: visible;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}
+.rectangle732 {
+  position: absolute;
+  right: 1428px;
+  bottom: 722px;
+  width: 492px;
+  height: 226px;
+  border-radius: 18px;
+  background-color: #c4e2be;
+}
+.concept01 {
+  color: #000;
+  font-size: 34px;
+  line-height: 140%;
+  font-weight: 500;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: -0.01em;
+  position: absolute;
+  left: 42px;
+  top: 194px;
+  width: 411px;
+  height: 117px;
+  flex-direction: column;
+}
+
+.concept01Detail {
+  color: #000;
+  font-size: 32px;
+  line-height: 140%;
+  font-weight: 500;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: -0.01em;
+  position: absolute;
+  left: 42px;
+  top: 194px;
+  width: 1px;
+  height: 117px;
+  flex-direction: column;
+}
+
+.rectangle82 {
+  position: absolute;
+  right: 900px;
+  bottom: 722px;
+  width: 492px;
+  height: 226px;
+  border-radius: 18px;
+  background-color: #c4efff;
+}
+.concept02 {
+  color: #000;
+  font-size: 34px;
+  line-height: 140%;
+  font-weight: 500;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: -0.01em;
+  position: absolute;
+  left: 568px;
+  top: 194px;
+  width: 411px;
+  height: 117px;
+  flex-direction: column;
+}
+
+.concept02Detail {
+  color: #000;
+  font-size: 32px;
+  line-height: 140%;
+  font-weight: 500;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: -0.01em;
+  position: absolute;
+  left: 568px;
+  top: 194px;
+  width: 411px;
+  height: 117px;
+  flex-direction: column;
+}
+
+.rectangle81 {
+  position: absolute;
+  right: 0;
+  bottom: 455px;
+  width: 865px;
+  height: 493px;
+  border-radius: 18px;
+  background-color: #fff;
+}
+.summaryTitle {
+  color: #000;
+  font-size: 34px;
+  line-height: 140%;
+  font-weight: bold;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: -0.01em;
+  position: absolute;
+  left: 1094px;
+  top: 171px;
+  width: 790px;
+  height: 59px;
+  flex-direction: column;
+}
+.summaryDetails {
+  color: #000;
+  font-size: 30px;
+  line-height: 140%;
+  font-weight: 500;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: -0.01em;
+  position: absolute;
+  left: 1094px;
+  
+  top: 167px;
+  width: 790px;
+  height: 347px;
+  flex-direction: column;
+}
+
+.sticky-container {
+  position: relative;
+}
+
+.sticky-box {
+  position: absolute;
+  /* To ensure box and label are independent */
+  border: 10px solid black;
+  /* Outline for visual clarity */
+}
+
+.sticky-box.theme {
+  background-color: lightgreen;
+  /* Theme-specific styling */
+}
+
+.sticky-box.nottheme {
+  background-color: lightyellow;
+  /* Non-theme-specific styling */
+}
+
+
+.sticky-label {
+  text-align: center;
+  /* Center the label text */
+  font-size: 12px;
+  /* Adjust font size as needed */
+
+}

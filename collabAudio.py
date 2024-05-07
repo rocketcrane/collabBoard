@@ -24,7 +24,7 @@ def audio(inputs):
 	CHANNELS = 1
 	RATE = 44100
 	CHUNK = 1024
-	RECORD_SECONDS = 5
+	RECORD_SECONDS = 10
 	OUTPUT_FILENAME = "recording.wav"
 	MP3_FILENAME = "recording.mp3" # keep track of the MP3 filename across processes
 	
